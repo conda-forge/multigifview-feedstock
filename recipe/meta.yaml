@@ -1,5 +1,5 @@
 {% set name = "multigifview" %}
-{% set version = "0.2.5" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c01d1c2a5861b8a6aa543cdcbf68fdd0645a46d3f4a73a523dcb393ca113e1cb
+  sha256: b63cbea3572ba102e846aa498de0ff47ab864803674f2aad1feef4f8600c7a01
 
 build:
   number: 0
