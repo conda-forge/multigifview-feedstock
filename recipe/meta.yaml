@@ -10,7 +10,7 @@ source:
   sha256: b63cbea3572ba102e846aa498de0ff47ab864803674f2aad1feef4f8600c7a01
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - multigifview = multigifview:main
@@ -27,8 +27,6 @@ requirements:
     - qt.py >=1.2
     - pyqt >=5.12
     - importlib_metadata  # [py<38]
-    # Not sure why sip is needed for windows. May be a bug with PyQt5.sip which is avoided by installing the independent sip package, but 'sip.delete' was missing only on Windows
-    - sip  # [win]
 
 test:
   commands:
