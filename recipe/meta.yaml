@@ -10,7 +10,7 @@ source:
   sha256: 66ca0200543630345e971ba63fad985385185b58be1775a11917e868faa8e959
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - multigifview = multigifview:main
